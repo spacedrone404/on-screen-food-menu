@@ -3,7 +3,8 @@
  ► ON-SCREEN FOOD MENU FOR RESTAURANTS  
  Brief project description.  
 
-Project implements solution for a dinning menu generation, where data are taken from PostgreSQL database via PHP script.  
+Project implements solution for a dinning menu generation, 
+where data are taken from PostgreSQL database via PHP script.  
 On frontend side data is received by means of pure Javascript.  
 Webpack environment is used for a frontend foundation. PUG syntax is used instead of plain HTML.  
    
