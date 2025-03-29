@@ -1,6 +1,6 @@
 > See plain _readme.txt for more details.
 
-![Alt text](pix/menu.png)
+![Alt text](src/pix/menu.png)
 
 
  ► ON-SCREEN FOOD MENU FOR RESTAURANTS  
