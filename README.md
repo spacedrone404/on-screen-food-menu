@@ -12,13 +12,12 @@ Developed on Windows 7 x64 ESU
 
 FRONTEND SIDE  
 #############  
-PUG templates/Js
-Webpack 5.88
-VS Code 1.93
+PUG templates/Js  
+Webpack 5.88  
+VS Code 1.93  
 
 BACKEND SIDE  
 ############  
-
 XAMPP [for making PHP 8 work on Windows 7]  
 Apache [embedded version]  
 PHP 8.2  
