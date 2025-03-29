@@ -1,5 +1,8 @@
  ► ON-SCREEN FOOD MENU FOR RESTAURANTS  
  Brief project description.  
+
+Alpha stage. No design, just a concept.  
+Functionality for entering dishes into the database is under development.  
  
 ![Food menu](src/pix/menu.png)
 
