@@ -1,7 +1,7 @@
 > See plain _readme.txt for more details.
 
  ► ON-SCREEN FOOD MENU FOR RESTAURANTS
- br
+ < br / > 
 Brief project description.
 
 Project implements solution for a dinning menu generation, where data are taken from PostgreSQL database via PHP script.
