@@ -1,0 +1,134 @@
+@use "variables" as *;
+
+body {
+  font-family: "SourceSansPro";
+  color: $colorMainText;
+  background-color: $colorMainBackground;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-family: "Font-title";
+  font-size: 40px;
+}
+
+h2 {
+  letter-spacing: 1.5px;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Font-text";
+  font-size: 32px;
+}
+
+a {
+  color: $colorMainText;
+}
+
+.content {
+  max-width: 100%;
+  margin: auto 2%;
+}
+
+@media screen and (max-width: 1540px) {
+  body {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .content {
+    max-width: 100%;
+    margin: auto 3%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .content {
+    margin: auto 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin: auto 5.2%;
+    // margin: auto 7.5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content {
+    margin: auto 4.2%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  body {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+
+  .content {
+    margin: auto 4.2%;
+    // font-size: 16px;
+  }
+}
+
+//рамка контента
+.content {
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 1540px) {
+  .content {
+    border: 1px solid purple;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    border: 1px solid green;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    border: 1px solid blue;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content {
+    border: 1px solid rgb(119, 204, 21);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .content {
+    border: 1px solid rgb(250, 51, 141);
+  }
+}
