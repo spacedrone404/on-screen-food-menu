@@ -6,7 +6,8 @@
 Project implements solution for a dinning menu generation,   
 where data are taken from PostgreSQL database via PHP script.  
 On frontend side data is received by means of pure Javascript.  
-Webpack environment is used for a frontend foundation. PUG syntax is used instead of plain HTML.  
+Webpack environment is used for a frontend foundation.  
+PUG syntax is used instead of plain HTML.  
    
 ► TECHNOLOGY STACK  
 Developed on Windows 7 x64 ESU  
