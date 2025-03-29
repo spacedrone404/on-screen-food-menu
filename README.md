@@ -1,4 +1,4 @@
-> See plain _readme.txt for more details.
+> See plain [[_readme.txt]](_readme.txt) for more details.
 
  ► ON-SCREEN FOOD MENU FOR RESTAURANTS  
  Brief project description.  
