@@ -8,7 +8,7 @@ On frontend side data is received by means of pure Javascript.
 Webpack environment is used for a frontend foundation. PUG syntax is used instead of plain HTML.  
    
 ► TECHNOLOGY STACK  
-Developed on Windows 7 x64 ESU.  
+Developed on Windows 7 x64 ESU  
 
 FRONTEND SIDE  
 #############  
@@ -19,8 +19,8 @@ VS Code 1.93
 BACKEND SIDE  
 ############  
 
-XAMPP [for making PHP 8 work on Windows 7]
-Apache [embedded version]
-PHP 8.2
-PostgreSQL 14
-PGAdmin 6.21 [hacked]
+XAMPP [for making PHP 8 work on Windows 7]  
+Apache [embedded version]  
+PHP 8.2  
+PostgreSQL 14  
+PGAdmin 6.21 [hacked]  
