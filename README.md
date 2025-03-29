@@ -1,5 +1,3 @@
-> See plain [[_readme.txt]](_readme.txt) for more details.
-
  ► ON-SCREEN FOOD MENU FOR RESTAURANTS  
  Brief project description.  
  
@@ -28,3 +26,5 @@ Apache [embedded version]
 PHP 8.2  
 PostgreSQL 14  
 PGAdmin 6.21 [hacked]  
+
+> See plain [[_readme.txt]](_readme.txt) for more details.
