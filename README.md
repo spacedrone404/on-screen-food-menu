@@ -1,10 +1,9 @@
 > See plain _readme.txt for more details.
 
-![Alt text](src/pix/menu.png)
-
-
  ► ON-SCREEN FOOD MENU FOR RESTAURANTS  
  Brief project description.  
+ 
+![Food menu](src/pix/menu.png)
 
 Project implements solution for a dinning menu generation,   
 where data are taken from PostgreSQL database via PHP script.  
