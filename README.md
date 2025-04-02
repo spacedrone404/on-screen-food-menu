@@ -26,15 +26,15 @@ FRONTEND SIDE
 #############  
 PUG markup/Js  
 NodeJs 23.7  
-Webpack 5.88  
-VS Code 1.93  
+Webpack 5.98  
+VS Code 1.93 (hacked)  
 
 BACKEND SIDE  
 ############  
-XAMPP [for making PHP 8 work on Windows 7]  
-Apache [embedded version]  
+XAMPP (for making PHP 8 work on Windows 7)  
+Apache (embedded version)
 PHP 8.2  
 PostgreSQL 14  
-PGAdmin 6.21 [hacked]  
+PGAdmin 6.21 (hacked)  
 
 > See plain [[_readme.txt]](_readme.txt) for more details.
