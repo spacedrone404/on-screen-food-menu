@@ -2,7 +2,6 @@
  Brief project description.  
 
 Beta stage. No design, just a concept.  
-Functionality for entering dishes into the database is under development.  
 
 > NEW Added PHP logic to add products to the database, remove element by their ID value, list all available products on one page.  
 Currently, the application does not have a responsive design because it is intended to be used on 1920x1080 environment.  
