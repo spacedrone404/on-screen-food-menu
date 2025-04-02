@@ -11,7 +11,7 @@ Dashboard > adds dishes to the DB, removes dishes by ID, lists all available pro
 Today menu > lists all today's dishes [TBD]  
 All dishes > parses DB for all available dishes  
  
-![Food menu](src/pix/menu.png)
+![Food menu](src/assets/food-menu.png)
 
 Project implements solution for a dinning menu generation,   
 where data are taken from PostgreSQL database via PHP script.  
