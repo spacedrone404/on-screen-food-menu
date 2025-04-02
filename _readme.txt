@@ -24,6 +24,19 @@ and so on ....
 Such feature will be useful to display independent information on different screens.
 You can add more of them if you have such needs.
 
+
+► WHAT'S NEW 
+############
+
+Added PHP logic to add products to the database, remove element by their ID value, list all available products on one page.
+
+Currently, the application does not have a responsive design because it is intended to be used on 1920x1080 environment.
+
+Dashboard > adds dishes to the DB, removes dishes by ID, lists all available products
+Today menu > lists all today's dishes [TBD]
+All dishes > parses DB for all available dishes
+
+
 ► DATABASE ENVIRONMENT [_db folder]
 ###################################
 
