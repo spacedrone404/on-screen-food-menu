@@ -3,7 +3,7 @@
 $host = 'localhost'; 
 $dbname = 'menus';   
 $user = 'postgres';  
-$password = '';      
+$password = 'Impulse#__44';      
 
 try {
     
@@ -14,7 +14,7 @@ try {
         $category = $_GET['category'];
         
         
-        $stmt = $dbh->prepare('SELECT weight, title, description, price FROM "dinner20250301" WHERE category = :category');
+        $stmt = $dbh->prepare('SELECT weight, title, description, price FROM "20250301dinner" WHERE category = :category');
         $stmt->execute([':category' => $category]);
                 
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
