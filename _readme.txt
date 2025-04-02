@@ -94,24 +94,20 @@ extension=pgsql
 3] Double-check that crucial services like PostgreSQL/Apache are up and running:
 services.msc
 
+► TECHNOLOGY STACK  
+Developed on Windows 7 x64 ESU  
 
-► TECHNOLOGY STACK
-##################
-Developed on Windows 7 x64 ESU.
+FRONTEND SIDE  
+#############  
+PUG markup/Js  
+NodeJs 23.7  
+Webpack 5.98  
+VS Code 1.93 (hacked)  
 
-FRONTEND SIDE
-#############
-
-PUG markup/Js
-NodeJs 23.7
-Webpack 5.88
-VS Code 1.93
-
-BACKEND SIDE
-############
-
-XAMPP [for making PHP 8 work on Windows 7]
-Apache [embedded version]
-PHP 8.2
-PostgreSQL 14
-PGAdmin 6.21 [hacked]
+BACKEND SIDE  
+############  
+XAMPP (for making PHP 8 work on Windows 7)  
+Apache (embedded version)
+PHP 8.2  
+PostgreSQL 14  
+PGAdmin 6.21 (hacked)  
