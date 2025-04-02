@@ -11,7 +11,7 @@ Dashboard > adds dishes to the DB, removes dishes by ID, lists all available pro
 Today menu > lists all today's dishes [TBD]  
 All dishes > parses DB for all available dishes  
  
-![Food menu](src/pix/menu.png)
+![Food menu](src/assets/food-menu.png)
 
 Project implements solution for a dinning menu generation,   
 where data are taken from PostgreSQL database via PHP script.  
@@ -26,15 +26,15 @@ FRONTEND SIDE
 #############  
 PUG markup/Js  
 NodeJs 23.7  
-Webpack 5.88  
-VS Code 1.93  
+Webpack 5.98  
+VS Code 1.93 (hacked)  
 
 BACKEND SIDE  
 ############  
-XAMPP [for making PHP 8 work on Windows 7]  
-Apache [embedded version]  
+XAMPP (for making PHP 8 work on Windows 7)  
+Apache (embedded version)
 PHP 8.2  
 PostgreSQL 14  
-PGAdmin 6.21 [hacked]  
+PGAdmin 6.21 (hacked)  
 
 > See plain [[_readme.txt]](_readme.txt) for more details.
