@@ -14,12 +14,10 @@ Also make sure to check entry points of webpack.config.js.
 There are index1, index2, index3 and admin.
 So bundler will emit index1.html, index2.html, index3.html to the browser.  
 
-http://localhost:8080/screen1.html
-http://localhost:8080/screen2.html
-http://localhost:8080/screen3.html
+http://localhost:8080/index1.html
+http://localhost:8080/index2.html
+http://localhost:8080/index3.html
 http://localhost:8080/admin.html
-
-and so on ....
 
 Such feature will be useful to display independent information on different screens.
 You can add more of them if you have such needs.

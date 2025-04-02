@@ -4,10 +4,13 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    index1: "./src/index1.pug",
-    index2: "./src/index2.pug",
-    index3: "./src/index3.pug",
+    screen1: "./src/screen1.pug",
+    screen2: "./src/screen2.pug",
+    screen3: "./src/screen3.pug",
     admin: "./src/admin.pug",
+    list: "./src/list.pug",
+    today: "./src/today.pug",
+    about: "./src/about.pug",
   },
 
   output: {
@@ -53,6 +56,10 @@ module.exports = {
           filename: "fonts/[name][ext][query]",
         },
       },
+      {
+        test: /\.txt$/i,
+        type: "asset/source",
+      },
     ],
   },
 
@@ -75,6 +82,7 @@ module.exports = {
     proxy: {
       "/": {
         target: "http://localhost",
+        changeOrigin: true,
       },
     },
     static: {

@@ -1,39 +1,16 @@
-// Yellow sticky note generation
-
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-let currentDate = new Date();
-let dateString = `${currentDate.getDate()}`;
-let monthString = `${months[currentDate.getMonth()]}`;
-
-document.getElementById("morf-date").textContent = dateString;
-document.getElementById("morf-month").textContent = monthString;
-
-// Simultaneous request
+// Simultaneous data request
 
 const categories = [
   { name: "Cold dishes", container: "menuContainerCold" },
   { name: "First courses", container: "menuContainerFirst" },
-  { name: "Second courses", container: "menuContainerSecond" },
+  // { name: "Second courses", container: "menuContainerSecond" },
   // { name: "Side dishes", container: "menuContainerSide" },
   // { name: "Drinks", container: "menuContainerDrinks" },
   // { name: "Bakery", container: "menuContainerBakery" },
 ];
 
 const requests = categories.map(({ name, container }) =>
-  fetch(`app/extractor.php?category=${encodeURIComponent(name)}`)
+  fetch(`app/core.php?category=${encodeURIComponent(name)}`)
     .then((response) => response.json())
     .then((data) => ({ container, data }))
 );

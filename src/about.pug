@@ -1,0 +1,31 @@
+- const readmeContent = require("./assets/readme.txt");
+
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title About App
+    link(rel="stylesheet", href=require("./styles/index.scss"))
+    script(defer src=require("./js/sticky.js"))
+    //- script(defer src=require("./js/menuscreen/screen1.js"))
+    style. 
+      .content-wrapper {
+        display: flex;
+        width: 400px;
+        flex-direction: column; 
+        justify-content: center;
+        margin-top: 100px;
+      }
+      p {color: black;}
+
+  body
+    main
+      include ./includes/sidemenu/sidemenu
+      //- pre!= readmeContent
+      .content-wrapper
+        p Brief project description. Project implements solution for a dinning menu generation, where data are taken from PostgreSQL database via PHP script. On frontend side data is received by means of pure Javascript.
+        p Webpack environment is used for a frontend foundation.PUG syntax is used instead of plain HTML.
+        p Take a note that Webpack module bundler is tuned for proxy connections in webpack.config.js to be able to connect frontend JS with backend PHP hosted on localhost Apache service.
+
+        p Also make sure to check entry points of webpack.config.js. There are index1, index2, index3 and admin. So bundler will emit index1.html, index2.html, index3.html to the browser.  

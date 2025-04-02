@@ -1,11 +1,27 @@
 @use "../../styles/main" as *;
 
-body {
-  overflow-x: hidden;
+.header__icon {
+  animation: slide-in-logo 1s;
 }
 
 .header__title {
   animation: slide-in-title 1s;
+}
+
+@keyframes slide-in-logo {
+  from {
+    transform: translateX(-130%);
+    display: none;
+    opacity: 0;
+    filter: blur(8px);
+  }
+
+  to {
+    transform: translateX(0%);
+    display: block;
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 @keyframes slide-in-title {
