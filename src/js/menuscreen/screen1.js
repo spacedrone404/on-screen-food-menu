@@ -11,7 +11,7 @@ const categories = [
 ];
 
 const requests = categories.map(({ name, container }) =>
-  fetch(`app/core.php?category=${encodeURIComponent(name)}`)
+  fetch(`app/extractor.php?category=${encodeURIComponent(name)}`)
     .then((response) => response.json())
     .then((data) => ({ container, data }))
 );
@@ -53,7 +53,7 @@ function renderMenu(containerId, data) {
 // ];
 
 // categories.forEach(({ name, container }) => {
-//   fetch(`app/core.php?category=${encodeURIComponent(name)}`)
+//   fetch(`app/extractor.php?category=${encodeURIComponent(name)}`)
 //     .then((response) => response.json())
 //     .then((data) => {
 //       renderMenu(container, data);
@@ -81,7 +81,7 @@ function renderMenu(containerId, data) {
 
 //- Temp stuff
 
-//- fetch('app/core.php?category=Cold dishes')
+//- fetch('app/extractor.php?category=Cold dishes')
 //-     .then(response => response.json())
 //-     .then(data => {
 //-         renderMenu('menuContainer', data);

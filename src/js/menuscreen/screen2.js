@@ -10,7 +10,7 @@ const categories = [
 ];
 
 const requests = categories.map(({ name, container }) =>
-  fetch(`app/core.php?category=${encodeURIComponent(name)}`)
+  fetch(`app/extractor.php?category=${encodeURIComponent(name)}`)
     .then((response) => response.json())
     .then((data) => ({ container, data }))
 );

@@ -1,22 +1,27 @@
-﻿<?php
+<?php
 
-$dsn = 'pgsql:host=localhost;port=5432;dbname=menus;user=postgres;password=';
+$host = 'localhost'; 
+$dbname = 'menus';   
+$user = 'postgres';  
+$password = '';      
 
 try {
-    $pdo = new PDO($dsn);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-
-    $query = "SELECT code, category, title, description, weight, price FROM dinnermenus";
-    $stmt = $pdo->query($query);
-
     
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    header('Content-Type: application/json');
-    echo json_encode($rows);
+    $dbh = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password);
+    
+       
+    if (!empty($_GET['category'])) {
+        $category = $_GET['category'];
+        
+        
+        $stmt = $dbh->prepare('SELECT code, weight, title, description, price FROM dinnermenus WHERE category = :category');
+        $stmt->execute([':category' => $category]);
+                
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                
+        echo json_encode($results);
+    } 
 } catch (PDOException $e) {
-    http_response_code(500);
     echo json_encode(['error' => $e->getMessage()]);
 }
 ?>

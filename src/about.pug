@@ -1,4 +1,3 @@
-- const readmeContent = require("./assets/readme.txt");
 
 doctype html
 html(lang='en')
@@ -9,23 +8,179 @@ html(lang='en')
     link(rel="stylesheet", href=require("./styles/index.scss"))
     script(defer src=require("./js/sticky.js"))
     //- script(defer src=require("./js/menuscreen/screen1.js"))
+    // testing embedded styles in PUG
     style. 
+    
       .content-wrapper {
         display: flex;
         width: 400px;
         flex-direction: column; 
         justify-content: center;
-        margin-top: 100px;
       }
-      p {color: black;}
+      p {color: black; font-size: 20px; font-weight: 400; text-align: center;}
+      ul {font-weight:900; margin-top: -10px;}
+      li {font-weight: 400;}
+      .pemail {margin-bottom: -35px; font-size: 14px;}
+      .pemail2 {font-size: 14px; font-weight: 900; margin-bottom: -30px;}
+      .pversion {font-weight: 900; text-decoration: underline;margin-bottom: -35px; color: red; margin-bottom: -20px;}
+      
+      #typing-container {
+          max-width: 800px;
+          margin: 0 auto;
+          background-color: white;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          padding-bottom: 70px;
+      }
+      .cursor {
+          display: inline-block;
+          width: 10px;
+          height: 1em;
+          background-color: #000;
+          animation: blink 1s infinite;
+          vertical-align: middle;
+          margin-left: 2px;
+      }
+      @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+      }
+
+      p.first {
+        margin-top: -20px;
+      }
+      p.first,
+      p.second {
+        margin-bottom: -30px;
+        font-weight: 900;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style-type: none;        
+        margin-bottom: -25px;
+      
+      }
+
+      li:before {
+          content: "* ";
+      }
+
+
+
 
   body
     main
       include ./includes/sidemenu/sidemenu
-      //- pre!= readmeContent
-      .content-wrapper
-        p Brief project description. Project implements solution for a dinning menu generation, where data are taken from PostgreSQL database via PHP script. On frontend side data is received by means of pure Javascript.
-        p Webpack environment is used for a frontend foundation.PUG syntax is used instead of plain HTML.
-        p Take a note that Webpack module bundler is tuned for proxy connections in webpack.config.js to be able to connect frontend JS with backend PHP hosted on localhost Apache service.
+      .content-wrapper#typing-container
 
-        p Also make sure to check entry points of webpack.config.js. There are index1, index2, index3 and admin. So bundler will emit index1.html, index2.html, index3.html to the browser.  
+  script.
+    const originalContent = `
+    p.pversion Version 0.2
+    p This web application combines abilities not only for restaurant customer service, but also for restaurant staff.Functionality should be expanded in a while, draft testbed version. Intended to use with 1920x1080 screens, so no responsive design at this time.
+
+    p.first Available functionality: 
+      li shows dinning menu on multiple monitors 
+      li data are taken from PostgreSQL database by means of JS queries and PHP scripts
+      li dashboard for adding new dishes 
+      li removing dishes in the database by ID number 
+      li listing available dishes 
+      li more to come
+
+    p.second Distinctive features:
+      li wide range of technologies used
+      li removing dishes in the database by ID number
+      li pure SCSS, no images were used
+      li purely made in VS Code
+      li made in Windows 7 x64/FedFox 135
+      
+    p.pemail created by spacedrone404 
+    p.pemail [ s p 8 0 8 A T d i s r o o t DOT o r g ]
+    p.pemail2 passionate about webdev
+    p.pemail2 looking for a solid job
+    `;
+
+    const container = document.getElementById('typing-container');
+    const lines = originalContent.split('\n').filter(line => line.trim() !== '');
+    
+    let currentLine = 0;
+    let currentChar = 0;
+    let currentElement = null;
+    
+    function typeNextCharacter() {
+        if (currentLine >= lines.length) {
+            // Remove cursor when typing is complete
+            const cursor = document.querySelector('.cursor');
+            if (cursor) cursor.remove();
+            return;
+        }
+        
+        const line = lines[currentLine].trim();
+        
+        // Create new element if needed
+        if (!currentElement) {
+            const tagMatch = line.match(/^([a-z]+(\.[a-z0-9]+)?)/);
+            if (tagMatch) {
+                const tagParts = tagMatch[1].split('.');
+                const tagName = tagParts[0];
+                currentElement = document.createElement(tagName);
+                
+                if (tagParts.length > 1) {
+                    currentElement.className = tagParts[1];
+                }
+                
+                container.appendChild(currentElement);
+                currentChar = tagMatch[0].length + 1; // Skip tag and space
+            } else {
+                // Handle indented lines (li elements)
+                if (line.startsWith('li * ')) {
+                    const lastUl = container.querySelector('ul:last-child');
+                    if (lastUl) {
+                        currentElement = document.createElement('li');
+                        lastUl.appendChild(currentElement);
+                        currentChar = 5; // Skip "li * "
+                    }
+                } else if (line.startsWith('  li * ')) {
+                    const lastUl = container.querySelector('ul:last-child');
+                    if (lastUl) {
+                        currentElement = document.createElement('li');
+                        lastUl.appendChild(currentElement);
+                        currentChar = 7; // Skip "  li * "
+                    }
+                }
+            }
+        }
+        
+        // Add next character
+        if (currentElement && currentChar < line.length) {
+            currentElement.textContent += line[currentChar];
+            currentChar++;
+            
+            // Add blinking cursor
+            const existingCursor = document.querySelector('.cursor');
+            if (existingCursor) existingCursor.remove();
+            
+            const cursor = document.createElement('span');
+            cursor.className = 'cursor';
+            currentElement.appendChild(cursor);
+            
+            // Random typing speed for more natural effect
+            const speed = Math.random() * 14 + 6;
+            setTimeout(typeNextCharacter, speed);
+        } else {
+            // Move to next line
+            currentLine++;
+            currentChar = 0;
+            currentElement = null;
+            
+            // Add delay between paragraphs
+            setTimeout(typeNextCharacter, currentLine % 3 === 0 ? 500 : 200);
+        }
+    }
+    
+    // Start typing
+    setTimeout(typeNextCharacter, 1000);

@@ -56,10 +56,6 @@ module.exports = {
           filename: "fonts/[name][ext][query]",
         },
       },
-      {
-        test: /\.txt$/i,
-        type: "asset/source",
-      },
     ],
   },
 

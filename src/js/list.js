@@ -11,7 +11,7 @@ const categories = [
 ];
 
 const requests = categories.map(({ name, container }) =>
-  fetch(`app/core.php?category=${encodeURIComponent(name)}`)
+  fetch(`app/list.php?category=${encodeURIComponent(name)}`)
     .then((response) => response.json())
     .then((data) => ({ container, data }))
 );
@@ -27,7 +27,8 @@ function renderMenu(containerId, data) {
 
   data.forEach((item) => {
     let menuItem = `
-            <div class="menu-item">  
+    <div class="menu-item">  
+    <div class="menu-title">#${item.code}</div> 
             <div class="menu-info">
             <div class="menu-title">${item.title}</div> 
             <div class="menu-description">${item.description}</div> 

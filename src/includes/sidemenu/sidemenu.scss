@@ -3,6 +3,7 @@
   // opacity: 0;
   // filter:blur(8px);
   animation: sideEmerge 1s ease-in-out;
+  z-index: 1000;
 }
 
 @keyframes sideEmerge {
