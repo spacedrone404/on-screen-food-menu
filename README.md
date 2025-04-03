@@ -12,7 +12,7 @@ Webpack environment is used for a frontend foundation.
 PUG syntax is used instead of plain HTML.
 
 ► DISTINCTIVE FEATURES  
-#######################
+####################
 
 * wide range of technologies used
 * pure SCSS, no images were used
