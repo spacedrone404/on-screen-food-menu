@@ -25,12 +25,11 @@ Functionality for restaurant staff:
 * wide range of technologies used
 * pure SCSS, no images were used
 * purely made in VS Code
-* made in Windows 7 x64/FedFox 135
+* made in Windows 7 x64 ESU/FedFox 135
 
 ► TECHNOLOGY STACK  
 ###################
-Developed on Windows 7 x64 ESU.  
-
+ 
 FRONTEND SIDE  
 
 PUG markup/SCSS  
