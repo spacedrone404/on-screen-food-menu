@@ -11,18 +11,26 @@ On frontend side data is received by means of pure Javascript.
 Webpack environment is used for a frontend foundation.  
 PUG syntax is used instead of plain HTML.
 
+► DISTINCTIVE FEATURES
+#######################
+
+* wide range of technologies used
+* pure SCSS, no images were used
+* purely made in VS Code
+* made in Windows 7 x64 ESU/FedFox 135
+
 ► TECHNOLOGY STACK  
-Developed on Windows 7 x64 ESU
+###################
 
 FRONTEND SIDE  
-#############  
+
 PUG markup/SCSS  
 JavaScript/NodeJs 23.7  
 Webpack 5.98  
 VS Code 1.93 (hacked)
 
 BACKEND SIDE  
-############  
+
 XAMPP (for making PHP 8 work on Windows 7)  
 Apache (embedded version)
 PHP 8.2  
