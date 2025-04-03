@@ -11,7 +11,7 @@ On frontend side data is received by means of pure Javascript.
 Webpack environment is used for a frontend foundation.  
 PUG syntax is used instead of plain HTML.
 
-► DISTINCTIVE FEATURES
+► DISTINCTIVE FEATURES  
 #######################
 
 * wide range of technologies used
