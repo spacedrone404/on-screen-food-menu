@@ -86,9 +86,8 @@ Developed on Windows 7 x64 ESU.
 
 FRONTEND SIDE
 #############
-
-PUG markup/Js
-NodeJs 23.7
+PUG markup/SCSS  
+JavaScript/NodeJs 23.7  
 Webpack 5.88
 VS Code 1.93
 
