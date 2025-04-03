@@ -1,10 +1,10 @@
 ► ON-SCREEN FOOD MENU FOR RESTAURANTS
-#############################################
+######################################
 
 I hate lack of documentation, so here you will find comprehensive information about the project.
 
 ► IMPLEMENTED FUNCTIONALITY
-###############################
+############################
 
 This web application combines abilities not only for restaurant customer service, but also for restaurant staff.
 Functionality should be expanded in a while, just give me some time.
@@ -54,7 +54,7 @@ Project includes the following technologies:
 * PHP > retrieve needed data from the database
 
 ► DATABASE ENVIRONMENT [_db folder]
-#####################################
+####################################
 
 Host: localhost
 Database : menus
@@ -96,7 +96,7 @@ wiper.php > deletes dish by ID code in the database
 
 
 ► TECHNICAL DETAILS
-######################
+####################
 
 Project implements solution for a dinning menu generation, where data are taken from PostgreSQL database via PHP script.
 On frontend side data is received by means of pure Javascript.
