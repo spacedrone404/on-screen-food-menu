@@ -9,7 +9,7 @@ try {
         $input = json_decode(file_get_contents('php://input'), true);
         $code = $input['code'];
 
-        $stmt = $pdo->prepare('DELETE FROM "dinner20250301" WHERE code = :code');
+        $stmt = $pdo->prepare('DELETE FROM "dinnermenus" WHERE code = :code');
         $stmt->execute(['code' => $code]);
 
         $affectedRows = $stmt->rowCount();
@@ -21,7 +21,7 @@ try {
     header('Content-Type: application/json');
     echo json_encode([
         'status' => 'error',
-        'message' => 'Ошибка при подключении к базе данных: ' . $e->getMessage()
+        'message' => 'Error when connecting to the database: ' . $e->getMessage()
     ]);
 }
 ?>

@@ -7,7 +7,7 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
-    $query = "SELECT code, category, title, description, weight, price FROM \"dinner20250301\"";
+    $query = "SELECT code, category, title, description, weight, price FROM dinnermenus";
     $stmt = $pdo->query($query);
 
     
