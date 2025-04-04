@@ -5,6 +5,10 @@ Beta stage. No design, just a concept.
 
 ![Food menu](src/assets/food-menu.png)
 
+![Food menu](src/assets/list.png)
+
+![Food menu](src/assets/admin.png)
+
 Project implements solution for a dinning menu generation,  
 where data are taken from PostgreSQL database via PHP script.  
 On frontend side data is received by means of pure Javascript.  
