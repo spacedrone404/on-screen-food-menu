@@ -5,6 +5,8 @@ Beta stage. No design, just a concept.
 Move the application to a platform like Heroku [TBD]   
 to get a live preview of the software to train myself as a developer.  
 
+
+
 ![Food menu](src/assets/food-menu.png)
 
 ![Food menu](src/assets/list.png)
