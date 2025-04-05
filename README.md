@@ -5,6 +5,24 @@ Beta stage. No design, just a concept.
 Move the application to a platform like Heroku [TBD]   
 to get a live preview of the software to train myself as a devop.  
 
+Project implements solution for a dinning menu generation,  
+where data are taken from PostgreSQL database via PHP script.  
+On frontend side data is received by means of pure Javascript.  
+Webpack environment is used for a frontend foundation.  
+PUG syntax is used instead of plain HTML.
+
+► MAIN FUNCTIONALITY
+#####################
+
+* shows dinning menu on multiple monitors 
+* data are taken from PostgreSQL by means of JS & PHP
+* dashboard for adding new dishes 
+* removing dishes in the database by ID
+* listing available dishes 
+* direct editing of listed elements
+* live search
+
+  
 ![Food menu](src/assets/food-menu.png)
 
 ![Food menu](src/assets/list.png)
@@ -16,12 +34,6 @@ to get a live preview of the software to train myself as a devop.
 ![Food menu](src/assets/search.png)
 
 ![Food menu](src/assets/version.png)
-
-Project implements solution for a dinning menu generation,  
-where data are taken from PostgreSQL database via PHP script.  
-On frontend side data is received by means of pure Javascript.  
-Webpack environment is used for a frontend foundation.  
-PUG syntax is used instead of plain HTML.
 
 ► DISTINCTIVE FEATURES  
 ####################
