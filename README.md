@@ -6,7 +6,7 @@ Move the application to a platform like Heroku [TBD]
 to get a live preview of the software to train myself as a devop.  
 
 Project implements solution for a dinning menu generation,  
-where data are taken from PostgreSQL database via PHP script.  
+where data is taken from PostgreSQL database via Js/PHP script.  
 On frontend side data is received by means of pure Javascript.  
 Webpack environment is used for a frontend foundation.  
 PUG syntax is used instead of plain HTML.
@@ -15,7 +15,6 @@ PUG syntax is used instead of plain HTML.
 #####################
 
 * shows dinning menu on multiple monitors 
-* data is taken from PostgreSQL by means of JS & PHP
 * dashboard for adding new dishes 
 * removing dishes in the database by ID
 * listing available dishes 
