@@ -1,7 +1,7 @@
 ► ON-SCREEN FOOD MENU FOR RESTAURANTS  
 Brief project description.
 
-Beta stage. No design, just a concept.
+Beta stage. No design, just a concept.  
 Move the application to a platform like Heroku [TBD],   
 to self-train myself as devop. 
 
