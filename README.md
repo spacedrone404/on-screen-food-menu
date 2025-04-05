@@ -2,12 +2,20 @@
 Brief project description.
 
 Beta stage. No design, just a concept.
+Move the application to a platform like Heroku [TBD], 
+to self-train myself as devop. 
 
 ![Food menu](src/assets/food-menu.png)
 
 ![Food menu](src/assets/list.png)
 
 ![Food menu](src/assets/admin.png)
+
+![Food menu](src/assets/edit.png)
+
+![Food menu](src/assets/search.png)
+
+![Food menu](src/assets/version.png)
 
 Project implements solution for a dinning menu generation,  
 where data are taken from PostgreSQL database via PHP script.  
