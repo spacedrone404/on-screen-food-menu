@@ -2,7 +2,7 @@
 Brief project description.
 
 Beta stage. No design, just a concept.  
-Move the application to a platform like Heroku [TBD]   
+**TBD** Move the application to a platform like Heroku, 
 to get a live preview of the software to train myself as a devop.  
 
 Project implements solution for a dinning menu generation,  
