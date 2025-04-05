@@ -46,6 +46,11 @@ select {
 
 input:focus {
   color: #ab1616;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(237, 8, 8, 0.3786648448441877) 100%
+  );
 }
 
 select {
@@ -63,6 +68,11 @@ input[type="text"]:focus,
 select:focus {
   outline: 2px solid #ff0000;
   border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(237, 8, 8, 0.3786648448441877) 100%
+  );
 }
 
 input::placeholder {

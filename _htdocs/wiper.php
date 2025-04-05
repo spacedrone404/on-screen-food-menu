@@ -21,7 +21,7 @@ try {
     header('Content-Type: application/json');
     echo json_encode([
         'status' => 'error',
-        'message' => 'Error when connecting to the database: ' . $e->getMessage()
+        'message' => 'Error connecting to the database: ' . $e->getMessage()
     ]);
 }
 ?>

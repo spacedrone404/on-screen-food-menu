@@ -44,6 +44,6 @@ if ($stmt->execute()) {
 } else {
     http_response_code(500); 
     header('Content-Type: application/json');
-    echo json_encode(['error' => 'Data not saved. Error: ' . implode(', ', $stmt->errorInfo())]);
+    echo json_encode(['error' => 'Failed to save data. Error:' . implode(', ', $stmt->errorInfo())]);
 }
 ?>

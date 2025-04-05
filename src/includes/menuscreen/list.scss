@@ -22,6 +22,7 @@ p.demo-par {
   display: flex;
   max-width: 1600px;
   margin: 0 auto;
+  margin-bottom: -50px;
   gap: 40px;
 }
 
@@ -131,4 +132,71 @@ p.demo-par {
 
 .menu-price {
   margin-right: 0;
+}
+
+.editable {
+  padding: 5px;
+  margin: 0 5px;
+  cursor: text;
+}
+
+.editable:focus {
+  outline: 2px solid #ff007b;
+  background-color: rgba(255, 0, 123, 0.2);
+}
+
+.save-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #009e2f;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #06bf09;
+}
+
+.delete-btn {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.search-button {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: #dc3545;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search-container {
+  padding: 10px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#searchBar {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchBar:focus {
+  background-color: rgba(255, 0, 123, 0.2);
 }

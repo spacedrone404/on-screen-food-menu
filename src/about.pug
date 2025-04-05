@@ -8,30 +8,34 @@ html(lang='en')
     link(rel="stylesheet", href=require("./styles/index.scss"))
     script(defer src=require("./js/sticky.js"))
     //- script(defer src=require("./js/menuscreen/screen1.js"))
-    // testing embedded styles in PUG
+    // testing embedded styles and JS in PUG
     style. 
     
       .content-wrapper {
         display: flex;
-        width: 400px;
+        width: 520px;
         flex-direction: column; 
         justify-content: center;
+
       }
+
       p {color: black; font-size: 20px; font-weight: 400; text-align: center;}
       ul {font-weight:900; margin-top: -10px;}
       li {font-weight: 400;}
       .pemail {margin-bottom: -35px; font-size: 14px;}
-      .pemail2 {font-size: 14px; font-weight: 900; margin-bottom: -30px;}
-      .pversion {font-weight: 900; text-decoration: underline;margin-bottom: -35px; color: red; margin-bottom: -20px;}
+      .pemail2 {font-size: 14px; font-weight: 900; margin-bottom: -30px; text-decoration: underline;}
+      .pversion {font-weight: 900; outline: 4px #0aed20 groove; margin-bottom: -35px; color: red; margin-bottom: -20px; padding: 4px;}
       
       #typing-container {
-          max-width: 800px;
+          max-width: 880px;
           margin: 0 auto;
-          background-color: white;
+          color: #0aed20; 
           padding: 20px;
           border-radius: 5px;
+          margin-top: 50px;
           box-shadow: 0 0 10px rgba(0,0,0,0.1);
           padding-bottom: 70px;
+          background-color: rgba(0, 0, 0, 0.88);
       }
       .cursor {
           display: inline-block;
@@ -47,13 +51,18 @@ html(lang='en')
           50% { opacity: 0; }
       }
 
+      p { color: #0aed20; }   
+
       p.first {
         margin-top: -20px;
       }
+
       p.first,
       p.second {
         margin-bottom: -30px;
         font-weight: 900;
+        color: #0aed20;
+        text-decoration: underline; 
       }
 
       ul {
@@ -69,30 +78,31 @@ html(lang='en')
       li:before {
           content: "* ";
       }
-
-
+      .cursor { background-color: #0aed20; }
 
 
   body
     main
+    
+      include ./includes/version
       include ./includes/sidemenu/sidemenu
       .content-wrapper#typing-container
 
   script.
     const originalContent = `
-    p.pversion Version 0.2
+    p.pversion Version 0.4+
     p This web application combines abilities not only for restaurant customer service, but also for restaurant staff.Functionality should be expanded in a while, draft testbed version. Intended to use with 1920x1080 screens, so no responsive design at this time.
 
     p.first Available functionality: 
       li shows dinning menu on multiple monitors 
-      li data are taken from PostgreSQL database by means of JS queries and PHP scripts
+      li data are taken from PostgreSQL by means of JS & PHP
       li dashboard for adding new dishes 
-      li removing dishes in the database by ID number 
+      li removing dishes in the database by ID
       li listing available dishes 
-      li more to come
+      li direct editing of listed elements
 
     p.second Distinctive features:
-      li wide range of technologies used
+      li Apache, Webpack, Pug, Js, PHP, PostgreSQL
       li pure SCSS, no images were used
       li purely made in VS Code
       li made in Windows 7 x64/FedFox 135
@@ -114,7 +124,7 @@ html(lang='en')
         if (currentLine >= lines.length) {
             // Remove cursor when typing is complete
             const cursor = document.querySelector('.cursor');
-            if (cursor) cursor.remove();
+            //- if (cursor) cursor.remove();
             return;
         }
         
