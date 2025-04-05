@@ -11,7 +11,7 @@ On frontend side data is received by means of pure Javascript.
 Webpack environment is used for a frontend foundation.  
 PUG syntax is used instead of plain HTML.
 
-► MAIN FUNCTIONALITY
+► MAIN FUNCTIONALITY  
 #####################
 
 * shows dinning menu on multiple monitors 
