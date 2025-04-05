@@ -15,12 +15,12 @@ PUG syntax is used instead of plain HTML.
 #####################
 
 * shows dinning menu on multiple monitors 
-* data are taken from PostgreSQL by means of JS & PHP
+* data is taken from PostgreSQL by means of JS & PHP
 * dashboard for adding new dishes 
 * removing dishes in the database by ID
 * listing available dishes 
 * direct editing of listed elements
-* live search
+* real-time live search
 
   
 ![Food menu](src/assets/food-menu.png)
